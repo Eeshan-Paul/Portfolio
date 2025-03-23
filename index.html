@@ -24,6 +24,10 @@
         <a href="#portfolio">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider round"></span>
+      </label>
     </header>
 
     <!-- home section design -->
@@ -47,14 +51,14 @@
         <a href="files\Eeshan_resume.pdf" class="btn" download> Download CV</a>
       </div>
       <div class="home-img">
-        <img src="images/Home.png" alt="">
+        <img src="images/My image.png" alt="">
       </div>
     </section>
     <!-- about section design -->
 
     <section class="about" id="about">
       <div class="about-img">
-        <img src="images/about.png" alt="">
+        <img src="images/My image.png" alt="">
       </div>
       <div class="about-content">
         <h2 class="heading">About <span>Me</span></h2>
@@ -69,6 +73,16 @@
             </p>
             <div class="btn">Read More</div> 
           </div>
+        </div>
+        <div class="tech-stack">
+          <h3>Tech Stack</h3>
+          <ul>
+            <li>Spring Boot</li>
+            <li>Java</li>
+            <li>REST API</li>
+            <li>Multithreading</li>
+            <li>Thymeleaf</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -168,17 +182,18 @@
 
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
-      <form action="https://formspree.io/f/xknyjggk" method="POST" >
+      <form action="https://formspree.io/f/your-formspree-id" method="POST" id="contactForm">
         <div class="input-box">
           <input type="text" name="name" placeholder="Full Name" id="name" required="">
           <input type="email" name="email" id="email" placeholder="Email Address" required="">
         </div>
         <div class="input-box">
-          <input type="number" name="Mobile" id="mobile_number" placeholder="Mobile Number" required="">
-          <input type="text" name="Subject" id="email_subject" placeholder="Email subject" required="">
+          <input type="number" name="mobile" id="mobile_number" placeholder="Mobile Number" required="">
+          <input type="text" name="subject" id="email_subject" placeholder="Email subject" required="">
         </div>
-        <textarea name="Content" id="msgcontent" cols="30" rows="10" placeholder="Your Message" required=""></textarea>
+        <textarea name="message" id="msgcontent" cols="30" rows="10" placeholder="Your Message" required=""></textarea>
         <input type="submit" id="message" value="Send Message" class="btn" required="">
+        <div id="status-message" class="status-message"></div>
       </form>
     </section>
 
@@ -202,9 +217,8 @@
     <!-- custom js -->
     <script src="js/script.js"></script>
 
-    <!-- for sending mail -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-
+    <!-- for sending mail - removing EmailJS scripts -->
+    <!-- Remove script error handler -->
     
   </body>
 </html>

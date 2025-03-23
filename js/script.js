@@ -63,49 +63,59 @@ const typed= new Typed('.multiple-text',{
     loop:true
 })
 
-/*==================== smtp.js for sending mail ====================*/
-
-
-// function sendEmail(){
-//     let name=document.getElementById("name").value;
-//     let email=document.getElementById("email").value;
-//     let mobile_number=document.getElementById("mobile_number").value;
-//     let subject=document.getElementById("email_subject").value;
-//     let msg=document.getElementById("msgcontent").value;
-//     console.log(name);
+/*==================== FormSpree form handling ====================*/
+// Add form submission feedback
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
+    const statusMessage = document.getElementById('status-message');
     
-//     Email.send({
-//         Host : "smtp.elasticemail.com",
-//         Username : "eeshanatri2904@gmail.com",
-//         Password : "DDF108ED067DFBE2E7F6061712B49F3275DC",
-//         To : 'eeshanatri2001@gmail.com',
-//         From : 'eeshanatri2904@gmail.com',
-//         Subject : "V.V.I. Contact form mail",
-//         Body : "Name: "+name+"</br> Email: "+email+ "</br> Mobile Number: "+mobile_number+"</br> Subject: "+subject+"</br> Message: "+msg
-//     }).then(
-//     message => alert("Message sent successfully!!")
-//     );    
-// }
+    if (contactForm) {
+        contactForm.addEventListener('submit', function() {
+            // Show sending message before form submits to Formspree
+            statusMessage.textContent = "Sending your message...";
+            statusMessage.className = "status-message";
+            statusMessage.style.display = "block";
+            
+            // Form will naturally redirect to Formspree's thank you page
+        });
+    }
+});
 
+/*==================== toggle theme ====================*/
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
 
-// <=============================About me ==============================>
+// Check for saved user preference, if any, on load of the website
+const currentTheme = localStorage.getItem('theme');
+if (currentTheme) {
+    body.classList.add(currentTheme);
+}
 
-const constrict_container=document.querySelector(".read-more-container");
+// Toggle theme and save preference
+function toggleTheme() {
+    if (body.classList.contains('dark-theme')) {
+        body.classList.remove('dark-theme');
+        localStorage.setItem('theme', '');
+    } else {
+        body.classList.add('dark-theme');
+        localStorage.setItem('theme', 'dark-theme');
+    }
+}
 
-constrict_container.addEventListener("click",event=>{
-    const current= event.target;
+themeToggle.addEventListener('click', toggleTheme);
 
-    const readbtn=current.className.includes('btn');
+/*==================== About me ====================*/
+const constrict_container = document.querySelector(".read-more-container");
 
+constrict_container.addEventListener("click", event => {
+    const current = event.target;
+    const readbtn = current.className.includes('btn');
+    
     if (!readbtn) return;
-
-    const text=current.parentNode.querySelector('.constrict-content');
-
+    
+    const text = current.parentNode.querySelector('.constrict-content');
     console.log(text);
-
+    
     text.classList.toggle('constrict-content--show');
-
     current.textContent = current.textContent.includes('Read More') ? "Read Less" : "Read More";
-
-
 });
