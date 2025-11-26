@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1, user-scalable=no">
+    <title>Thank You - Eeshan Portfolio</title>
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg,#0078d7 0%, #00c6fb 50%, #ff512f 100%);
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        .thankyou-card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+            padding: 40px 28px 32px 28px;
+            max-width: 370px;
+            width: 92vw;
+            text-align: center;
+        }
+        h2 {
+            color: #0078d7;
+            font-size: 2rem;
+            margin-bottom: 18px;
+        }
+        p {
+            color: #333;
+            font-size: 1.1rem;
+            margin-bottom: 28px;
+        }
+        .back-btn {
+            padding: 12px 32px;
+            background: linear-gradient(90deg,#ff512f,#dd2476);
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: 600;
+            box-shadow: 0 2px 8px rgba(221,36,118,0.15);
+            transition: background 0.3s;
+        }
+        .back-btn:hover {
+            background: linear-gradient(90deg,#dd2476,#ff512f);
+        }
+    </style>
+</head>
+<body>
+    <div class="thankyou-card">
+        <h2>Thank You!</h2>
+        <p>Your message has been sent successfully.<br>I'll get back to you as soon as possible.</p>
+        <button class="back-btn" onclick="window.location.href='index.html'">Back to Home</button>
+    </div>
+</body>
+</html>

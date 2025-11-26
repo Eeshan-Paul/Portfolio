@@ -10,6 +10,86 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+  @media (max-width: 500px) {
+        body {
+          font-size: 15px;
+        }
+        .heading {
+          font-size: 1.5rem !important;
+          margin-top: 24px !important;
+          margin-bottom: 18px !important;
+        }
+        .home-content {
+          padding: 0 10px;
+        }
+        .home-img img {
+          max-width: 90vw;
+          height: auto;
+          border-radius: 16px;
+          box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+        }
+        .about-img img {
+          max-width: 90vw;
+          height: auto;
+          border-radius: 16px;
+          box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+        }
+        .portfolio-container {
+          grid-template-columns: 1fr !important;
+          gap: 18px !important;
+        }
+        .portfolio-box img {
+          max-width: 90vw;
+          height: auto;
+          border-radius: 12px;
+        }
+        .services-container {
+          flex-direction: column !important;
+          gap: 18px !important;
+        }
+        .services-box {
+          width: 100% !important;
+        }
+        .about-content, .about-img {
+          padding: 0 10px;
+        }
+        .footer-text {
+          font-size: 13px;
+        }
+        .navbar {
+          flex-direction: column;
+          gap: 10px;
+        }
+        .btn, button {
+          font-size: 1rem !important;
+          padding: 10px 18px !important;
+        }
+        .contact {
+          padding: 30px 8px !important;
+        }
+        .contact form {
+          width: 100% !important;
+          min-width: 0 !important;
+          box-sizing: border-box;
+        }
+        .input-box {
+          flex-direction: column !important;
+          gap: 10px !important;
+        }
+        .input-box input, textarea {
+          width: 100% !important;
+          font-size: 1rem !important;
+        }
+        textarea {
+          min-height: 120px !important;
+        }
+        .status-message {
+          font-size: 0.95rem !important;
+          margin-top: 8px !important;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -36,11 +116,10 @@
         <h3>Hello,It's Me</h3>
         <h1>Eeshan Paul</h1>
         <h3>And I'm a <span class="multiple-text"></span></h3>
-        <p>Hello,I am Eeshan Paul. I am a recent graduate of 2023 from Jadavpur University. I was always passionate 
-          about software development and interested to know the in and outs of the workings of the IT companies.
-          In the quest, of knowing the software field I have updated myself with the recent technologies available in 
-          the market. I have also done some internships which uplifted my confidence over my skills. So, I am a 
-          very energetic enthusiast who will always strive to make myself and your company a better version of today.
+        <p>Backend Engineer with experience in designing scalable microservices, automating workflows, optimizing SQL functions,
+and delivering production-ready features across cloud environments. Strong in Java, Spring Boot, REST API
+development, and performance-driven backend solutions. 590+ LeetCode problems solved spanning algorithms, data
+structures, complexity analysis, recursion, dynamic programming, greedy techniques, and optimization.
         </p>
         <div class="social-media">
           <a href="https://www.facebook.com/eeshan.p?mibextid=ZbWKwL"><i class="bx bxl-facebook"></i></a>
@@ -48,7 +127,14 @@
           <a href="https://www.instagram.com/pauleeshan/?igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="bx bxl-instagram-alt"></i></a>
           <a href="https://www.linkedin.com/in/eeshan-paul-177b621a9/"><i class="bx bxl-linkedin"></i></a>
         </div>
-        <a href="files\Eeshan_resume.pdf" class="btn" download> Download CV</a>
+          <div style="margin-top: 30px; display: flex; gap: 16px; justify-content: flex-start;">
+            <a href="files/Eeshan_resume.pdf" download>
+              <button type="button" style="background: linear-gradient(90deg,#0078d7,#00c6fb); color: #fff; border: none; border-radius: 25px; padding: 12px 28px; font-size: 1rem; font-weight: 600; box-shadow: 0 2px 8px rgba(0,120,215,0.15); cursor: pointer; transition: background 0.3s;">Download Resume</button>
+            </a>
+            <a href="view-resume.html">
+              <button type="button" style="background: linear-gradient(90deg,#ff512f,#dd2476); color: #fff; border: none; border-radius: 25px; padding: 12px 28px; font-size: 1rem; font-weight: 600; box-shadow: 0 2px 8px rgba(221,36,118,0.15); cursor: pointer; transition: background 0.3s;">View Resume</button>
+            </a>
+          </div>
       </div>
       <div class="home-img">
         <img src="images/My image.png" alt="">
@@ -65,22 +151,21 @@
         <h3>Software Developer!</h3>
         <div class="read-more-container">
           <div class="container">
-            <p class="content">I know about web-development,machine learning and along with ds-algo with commands in languages such as python,c++,html,css,javascript.
+            <p class="content">I am an Advanced Application Engineering Analyst with 1.5+ years of experience in backend development, microservices, and cloud-based engineering. I enjoy building scalable systems, automating workflows, and delivering production-ready features across enterprise and startup environments.
               <span class="constrict-content">
-                I have done two internships in which one gave me experience about python,NLP,AWS and Flask.
-                I got to know how the backend is linked with the frontend and at last deployed in a cloud platform like AWS.And the second one was a research internship in which I got the preview how ML and software technologies are used in other sectors apart from website and android application and thus directly benifiting the world.
+                  I am skilled in Java, Python, C++, JavaScript, SQL, Spring Boot, Flask, Thymeleaf, HTML, CSS, PostgreSQL, Azure, AWS, Google Cloud, Git, GitHub, and Postman.
+                  I am passionate about backend engineering, cloud technologies, problem-solving, and building systems that make an impact. Open to opportunities where I can contribute to strong product engineering teams and continue growing as a developer.
               </span>
             </p>
             <div class="btn">Read More</div> 
           </div>
-        </div>
         <div class="tech-stack">
           <h3>Tech Stack</h3>
           <ul>
             <li>Spring Boot</li>
             <li>Java</li>
             <li>REST API</li>
-            <li>Multithreading</li>
+            <li>Multithreading and Concurrency</li>
             <li>Thymeleaf</li>
           </ul>
         </div>
@@ -182,7 +267,7 @@
 
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
-      <form action="https://formspree.io/f/your-formspree-id" method="POST" id="contactForm">
+      <form action="https://formspree.io/f/xrbvnobd" method="POST" id="contactForm">
         <div class="input-box">
           <input type="text" name="name" placeholder="Full Name" id="name" required="">
           <input type="email" name="email" id="email" placeholder="Email Address" required="">
@@ -192,9 +277,75 @@
           <input type="text" name="subject" id="email_subject" placeholder="Email subject" required="">
         </div>
         <textarea name="message" id="msgcontent" cols="30" rows="10" placeholder="Your Message" required=""></textarea>
+        <input type="button" id="previewBtn" value="Preview" class="btn" style="background: linear-gradient(90deg,#ffb347,#ffcc33); color: #333; margin-right: 10px;">
         <input type="submit" id="message" value="Send Message" class="btn" required="">
         <div id="status-message" class="status-message"></div>
       </form>
+
+      <!-- Preview Modal -->
+      <div id="previewModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.35); z-index:9999; align-items:center; justify-content:center;">
+        <div style="background: linear-gradient(135deg,#f8fafc 60%,#e0e7ff 100%); border-radius:16px; max-width:370px; width:92vw; padding:28px 20px 22px 20px; box-shadow:0 4px 24px rgba(0,0,0,0.18); position:relative; border: 1px solid #e0e7ff;">
+          <h3 style="margin-bottom:18px; font-size:1.25rem; color:#0078d7; text-align:center; font-weight:700; letter-spacing:0.5px;">Preview Your Message</h3>
+          <div id="previewContent" style="font-size:1rem; margin-bottom:20px; color:#222; line-height:1.6;"></div>
+          <button id="closePreview" style="background:#f3f4f6; color:#0078d7; border:none; border-radius:8px; padding:8px 18px; margin-right:8px; cursor:pointer; font-weight:600; box-shadow:0 1px 4px rgba(0,120,215,0.08);">Edit</button>
+          <button id="submitPreview" style="background: linear-gradient(90deg,#0078d7,#00c6fb); color: #fff; border:none; border-radius:8px; padding:8px 18px; cursor:pointer; font-weight:600; box-shadow:0 1px 4px rgba(0,120,215,0.10);">Submit</button>
+        </div>
+      </div>
+      <script>
+                // Custom thank you page redirect
+                document.getElementById('contactForm').addEventListener('submit', function(e) {
+                  e.preventDefault();
+                  var form = e.target;
+                  var data = new FormData(form);
+                  fetch(form.action, {
+                    method: 'POST',
+                    body: data,
+                    headers: {
+                      'Accept': 'application/json'
+                    }
+                  }).then(function(response) {
+                    if (response.ok) {
+                      window.location.href = 'thankyou.html';
+                    } else {
+                      response.json().then(function(data) {
+                        document.getElementById('status-message').textContent = data.error || 'Oops! Something went wrong.';
+                      });
+                    }
+                  }).catch(function() {
+                    document.getElementById('status-message').textContent = 'Oops! Something went wrong.';
+                  });
+                });
+        // Preview button handler
+        document.getElementById('previewBtn').onclick = function(e) {
+          e.preventDefault();
+          var name = document.getElementById('name').value;
+          var email = document.getElementById('email').value;
+          var mobile = document.getElementById('mobile_number').value;
+          var subject = document.getElementById('email_subject').value;
+          var message = document.getElementById('msgcontent').value;
+          var previewHtml = `
+            <div style="margin-bottom:10px;"><span style="font-weight:600;color:#0078d7;">Name:</span> ${name}</div>
+            <div style="margin-bottom:10px;"><span style="font-weight:600;color:#0078d7;">Email:</span> ${email}</div>
+            <div style="margin-bottom:10px;"><span style="font-weight:600;color:#0078d7;">Mobile:</span> ${mobile}</div>
+            <div style="margin-bottom:10px;"><span style="font-weight:600;color:#0078d7;">Subject:</span> ${subject}</div>
+            <div style="font-weight:600;color:#0078d7; margin-bottom:6px;">Message:</div>
+            <div style="white-space:pre-line; background:#f3f4f6; border-radius:8px; padding:10px 12px; color:#222; font-size:1rem; border:1px solid #e0e7ff;">${message}</div>
+          `;
+          document.getElementById('previewContent').innerHTML = previewHtml;
+          document.getElementById('previewModal').style.display = 'flex';
+        };
+
+        // Close preview modal
+        document.getElementById('closePreview').onclick = function() {
+          document.getElementById('previewModal').style.display = 'none';
+        };
+
+        // Submit from preview modal
+        document.getElementById('submitPreview').onclick = function() {
+          document.getElementById('previewModal').style.display = 'none';
+          document.getElementById('contactForm').requestSubmit();
+        };
+      </script>
     </section>
 
     <!-- footer design -->
